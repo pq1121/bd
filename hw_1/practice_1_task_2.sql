@@ -1,0 +1,11 @@
+USE seschool_02;
+
+CREATE TABLE `Employees` (
+	`EmployeeID` BIGINT(8) UNSIGNED NOT NULL PRIMARY KEY,
+	`FirstName` VARCHAR(50) NOT NULL,
+	`LastName` VARCHAR(50) NOT NULL,
+	`MiddleName` VARCHAR(50) NOT NULL,
+	`DateOfBirth` DATE NOT NULL,
+	`HireDate` DATE NOT NULL,
+	`Salary` MEDIUMINT UNSIGNED NOT NULL
+)
