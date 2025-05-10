@@ -1,0 +1,13 @@
+USE seschool_02;
+
+CREATE TABLE `students_table` (
+	`StudentID` BIGINT(5) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`Name` VARCHAR(50) NOT NULL,
+	`Gender` ENUM('м', 'ж') NOT NULL,
+	`DateOfBirth` DATE NOT NULL,
+	`Snils` CHAR(14) NOT NULL UNIQUE,
+	`Course` ENUM('1', '2', '3') NOT NULL DEFAULT '1',
+	`Group` VARCHAR(8) NOT NULL,
+	`GPA` FLOAT NOT NULL,
+	`Hobby` VARCHAR(70)
+);
